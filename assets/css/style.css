@@ -1,0 +1,48 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+input[type='text'] {
+height: 50px;
+width: 600px;
+border-style: none;
+border-radius: 1rem;
+padding: 10px 10px;
+
+}
+
+.btn {
+    border-radius: 2rem;
+}
+
+.card-header {
+    background-color: #324001;
+    color:#BECFC1;
+}
+
+.searchContainer {
+    animation: 10000ms ease-in-out infinite color-change;
+
+}
+
+@keyframes color-change {
+    0% {
+      background-color: #BECFC1;
+    }
+    25% {
+      background-color: #DDE1E0;
+    }
+    50% {
+      background-color: #B3BEBA;
+    }
+    75% {
+      background-color: #708C80;
+    }
+    100% {
+      background-color: #BECFC1;
+    }
+   
+  }

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    
+   
+    <script src="https://kit.fontawesome.com/785d269a30.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel='stylesheet' href='./assets/css/style.css'/>
+</head>
+<body>
+    
+        <div  class="card">
+            <h3 class="card-header text-uppercase d-flex justify-content-center">Weather Dashboard</h3>
+            <audio autoplay loop>
+                <source src="./assets/Birds-In-Sun-And-Snow-Sound-Effect.wav" type="audio/wav">
+            </audio>
+     <div class='searchContainer'>
+            <form id="user-form" class="card-body">
+              <label class="form-label" for="location"></label>
+              <input name="location" id="location" type="text" autofocus="true" class="form-input" placeholder=" Enter a city name"/>
+              <input type="submit" class="btn btn-primary btn-success"> <i class="fas fa-frog"></i></input>
+     </div>
+            </form>
+       </div>
+       
+<div class="display">
+       <div class="card mb-3" style="max-width: 540px;">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-name"></h5>
+              <p class="card-desc"></p>
+              <p class="card-temp"><small class="text-muted"></small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+      
+      
+
+    <script src='./assets/js/script.js'></script>
+</body>
+</html>
