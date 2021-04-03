@@ -6,20 +6,24 @@ var cityTempEl = document.querySelector('.card-temp');
 
 
 buttonEl.addEventListener('click', function(){
-fetch('https://api.openweathermap.org/data/2.5/forecast?q='+inputEl.value+'&appid=06a0e2036d2bbf6771592a9af49eefe3')
+fetch('https://api.openweathermap.org/data/2.5/forecast?q='+inputEl.value+'&units=imperial&appid=06a0e2036d2bbf6771592a9af49eefe3')
 .then(response => response.json())
 .then(data => {
-    var cityValue = data['name'];
-    var cityTemp = data['main']['temp'];
-    var cityDesc = data['weather'][0]['description'];
+    var cityValue = data['city']['name'];
+    var cityTemp = data['list'][0]['main']['temp'];
+    var cityDesc = data['weather'];
+    console.log(data);
+    
 
     cityNameEl.innerHTML = cityValue;
     cityDescEl.innerHTML = cityDesc;
-    cityTempEl.innerHTML = cityTemp;
+    cityTempEl.innerHTML = cityTemp + '°F';
 
 })
 
-.catch(err => alert("Invalid city name!"))
+.catch(err => console.log(err))
+
+
 
 })
 
