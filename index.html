@@ -22,14 +22,31 @@
      <div class='searchContainer'>
             <form id="user-form" class="card-body">
               <label class="form-label" for="location"></label>
-              <input name="location" id="location" type="text" autofocus="true" class="form-input" placeholder=" Enter a city name"/>
+              <input name="location" id="location" type="text" autofocus="true" class="form-input" placeholder=" Ex: Paris, FR or Paris, US"/>
               <button class="btn btn-primary btn-success"> <i class="fas fa-frog"></i></button>
      </div>
             </form>
        </div>
-       
-    
 
+       <div class="storedCities d-flex justify-content-center">
+          <div id="lsCities"></div>
+       </div>
+       
+       <div class='currentWeather'>
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+            <h1 class="display-4 d-flex justify-content-center card-nameTop"></h1>
+            <p class="lead d-flex justify-content-center currentTemp"></p>
+            <p class="lead d-flex justify-content-center currentCloud"></p>
+            <p class="lead d-flex justify-content-center currentTemp"></p>
+            <p class="lead d-flex justify-content-center currentWind"></p>
+            <p class="lead d-flex justify-content-center currentHumidity"></p>
+          </div>
+        </div>
+
+       </div>
+    
+ <div class='fiveDay d-flex justify-content-center'>
 <div class="display">
        <div class="card mb-3" style="max-width: 540px;">
         <div class="row no-gutters">
@@ -40,6 +57,8 @@
               <h5 class="card-name"></h5>
               <p class="card-desc"></p>
               <p class="card-temp"></p>
+              <p class="card-wind"></p>
+              <p class="card-humidity"></p>
               <p class="card-time"></p>
             </div>
           </div>
@@ -58,6 +77,8 @@
              <h5 class="card-nameT"></h5>
              <p class="card-descT"></p>
              <p class="card-tempT"></p>
+             <p class="card-windT"></p>
+              <p class="card-humidityT"></p>
              <p class="card-timeT"></p>
            </div>
          </div>
@@ -76,6 +97,8 @@
            <h5 class="card-nameTh"></h5>
            <p class="card-descTh"></p>
            <p class="card-tempTh"></p>
+           <p class="card-windTh"></p>
+              <p class="card-humidityTh"></p>
            <p class="card-timeTh"></p>
          </div>
        </div>
@@ -95,6 +118,8 @@
          <h5 class="card-nameF"></h5>
          <p class="card-descF"></p>
          <p class="card-tempF"></p>
+         <p class="card-windF"></p>
+              <p class="card-humidityF"></p>
          <p class="card-timeF"></p>
        </div>
      </div>
@@ -114,6 +139,8 @@
          <h5 class="card-nameFi"></h5>
          <p class="card-descFi"></p>
          <p class="card-tempFi"></p>
+         <p class="card-windFi"></p>
+              <p class="card-humidityFi"></p>
          <p class="card-timeFi"></p>
        </div>
      </div>
@@ -121,13 +148,9 @@
  </div>
 
 </div>
+</div>
 
 
-
-    
-
-      
-      
 
     <script src='./assets/js/script.js'></script>
 </body>
